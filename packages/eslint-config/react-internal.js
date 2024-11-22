@@ -1,6 +1,6 @@
-const { resolve } = require("node:path");
+const { resolve } = require("node:path")
 
-const project = resolve(process.cwd(), "tsconfig.json");
+const project = resolve(process.cwd(), "tsconfig.json")
 
 /*
  * This is a custom ESLint configuration for use with
@@ -10,7 +10,13 @@ const project = resolve(process.cwd(), "tsconfig.json");
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ["eslint:recommended", "prettier", "turbo"],
+  extends: [
+    "eslint:recommended",
+    "prettier",
+    "turbo",
+    require.resolve("@vercel/style-guide/eslint/react"),
+    require.resolve("./base"),
+  ],
   plugins: ["only-warn"],
   globals: {
     React: true,
@@ -35,4 +41,4 @@ module.exports = {
     // Force ESLint to detect .tsx files
     { files: ["*.js?(x)", "*.ts?(x)"] },
   ],
-};
+}

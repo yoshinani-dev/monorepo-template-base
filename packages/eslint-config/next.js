@@ -1,6 +1,6 @@
-const { resolve } = require("node:path");
+const { resolve } = require("node:path")
 
-const project = resolve(process.cwd(), "tsconfig.json");
+const project = resolve(process.cwd(), "tsconfig.json")
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
@@ -9,6 +9,7 @@ module.exports = {
     "prettier",
     require.resolve("@vercel/style-guide/eslint/next"),
     "turbo",
+    require.resolve("./base"),
   ],
   globals: {
     React: true,
@@ -32,4 +33,4 @@ module.exports = {
     "node_modules/",
   ],
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
-};
+}
