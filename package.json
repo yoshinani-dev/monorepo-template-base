@@ -1,5 +1,5 @@
 {
-  "name": "lea-manager-v2",
+  "name": "monorepo-template-base",
   "private": true,
   "scripts": {
     "build": "turbo build",
