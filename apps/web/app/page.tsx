@@ -1,4 +1,5 @@
 import { Button } from "@repo/ui/components/ui/button"
+import { render } from "@testing-library/react"
 import Image, { type ImageProps } from "next/image"
 
 import styles from "./page.module.css"
@@ -17,6 +18,24 @@ const ThemeImage = (props: Props) => {
       <Image {...rest} src={srcDark} className="imgDark" />
     </>
   )
+}
+
+if (import.meta.vitest) {
+  const { it, describe } = import.meta.vitest
+
+  describe("ThemeImage", () => {
+    it("should render", () => {
+      render(
+        <ThemeImage
+          alt="test"
+          srcLight="turborepo-dark.svg"
+          srcDark="turborepo-light.svg"
+          width={180}
+          height={38}
+        />,
+      )
+    })
+  })
 }
 
 export default function Home() {
