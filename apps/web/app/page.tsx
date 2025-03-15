@@ -1,4 +1,4 @@
-import { Button } from "@repo/ui/components/ui/button"
+import { Button } from "@repo/ui/components/button"
 import { render } from "@testing-library/react"
 import Image, { type ImageProps } from "next/image"
 
