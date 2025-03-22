@@ -5,5 +5,17 @@
   "files.associations": {
     ".env.local": "dotenv"
   },
-  "cSpell.words": ["opengraph", "remeda", "shadcn", "turbopack"]
+  "cSpell.words": [
+    "firestore",
+    "liff",
+    "nakanoaas",
+    "opengraph",
+    "postback",
+    "remeda",
+    "replyable",
+    "shadcn",
+    "turbopack",
+    "usecase",
+    "valibot"
+  ]
 }

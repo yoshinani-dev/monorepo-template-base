@@ -84,7 +84,7 @@ module.exports = {
         paths: [
           {
             name: "yup",
-            message: "zodを使用してください。",
+            message: "valibotを使用してください。",
           },
           {
             name: "@material-tailwind/react",
