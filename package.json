@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@yoshinani/style-guide": "^0.2.2",
-    "eslint": "^8",
+    "eslint": "^9",
     "prettier": "^3.4.2",
     "turbo": "^2.3.3",
     "typescript": "5.7.2",
