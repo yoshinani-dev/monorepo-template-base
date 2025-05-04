@@ -1,11 +1,6 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  "extends": "@yoshinani/style-guide/typescript/nextjs",
   "compilerOptions": {
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@repo/ui/*": ["../../packages/ui/src/*"],
       "~/env": ["./env.ts"],

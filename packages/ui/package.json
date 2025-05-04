@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.0.15",
     "@turbo/gen": "^2.4.4",
     "@types/node": "^22.13.11",
