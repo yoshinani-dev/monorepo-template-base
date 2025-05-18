@@ -5,17 +5,12 @@
   "files.associations": {
     ".env.local": "dotenv"
   },
-  "cSpell.words": [
-    "firestore",
-    "liff",
-    "nakanoaas",
-    "opengraph",
-    "postback",
-    "remeda",
-    "replyable",
-    "shadcn",
-    "turbopack",
-    "usecase",
-    "valibot"
-  ]
+  "cSpell.customDictionaries": {
+    "yoshinani": {
+      "name": "yoshinani",
+      "path": "${workspaceFolder}/node_modules/@yoshinani/style-guide/cspell/words.txt",
+      "addWords": false
+    }
+  },
+  "cSpell.words": ["replyable"]
 }
