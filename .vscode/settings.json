@@ -11,6 +11,5 @@
       "path": "${workspaceFolder}/node_modules/@yoshinani/style-guide/cspell/words.txt",
       "addWords": false
     }
-  },
-  "cSpell.words": ["replyable"]
+  }
 }

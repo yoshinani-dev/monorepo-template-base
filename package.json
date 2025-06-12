@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@yoshinani/style-guide": "^0.2.2",
+    "@yoshinani/style-guide": "^0.5.1",
     "eslint": "^9",
     "prettier": "^3.4.2",
     "turbo": "^2.3.3",
