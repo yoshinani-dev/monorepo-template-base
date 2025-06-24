@@ -8,12 +8,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@yoshinani/style-guide": "^0.5.1",
+    "@yoshinani/style-guide": "^0.8.0",
     "eslint": "^9",
-    "prettier": "^3.4.2",
-    "turbo": "^2.3.3",
-    "typescript": "5.7.2",
-    "vitest": "^3.0.7"
+    "prettier": "^3.6.0",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.3",
+    "vitest": "^3.2.4"
   },
   "packageManager": "pnpm@10.12.1",
   "engines": {
