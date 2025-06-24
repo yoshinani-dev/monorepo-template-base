@@ -17,6 +17,9 @@ updates:
       dependencies:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # apps/web のパッケージの更新設定
   - package-ecosystem: "npm"
