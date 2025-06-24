@@ -21,9 +21,9 @@ updates:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
 
-  # apps/web のパッケージの更新設定
+  # apps配下のパッケージの更新設定
   - package-ecosystem: "npm"
-    directory: "/apps/web"
+    directories: ["/apps/*"]
     schedule:
       interval: "weekly"
       day: "monday"
@@ -39,9 +39,9 @@ updates:
         patterns:
           - "*"
 
-  # packages/ui のパッケージの更新設定
+  # packages配下のパッケージの更新設定
   - package-ecosystem: "npm"
-    directory: "/packages/ui"
+    directories: ["/packages/*"]
     schedule:
       interval: "weekly"
       day: "monday"
