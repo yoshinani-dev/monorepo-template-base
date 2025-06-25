@@ -38,6 +38,9 @@ updates:
       dependencies:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # packages配下のパッケージの更新設定
   - package-ecosystem: "npm"
@@ -56,6 +59,9 @@ updates:
       dependencies:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # GitHub Actionsの更新設定
   - package-ecosystem: "github-actions"
