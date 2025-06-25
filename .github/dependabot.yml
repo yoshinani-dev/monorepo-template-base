@@ -1,50 +1,11 @@
 version: 2
 updates:
-  # ルートのpackage.jsonの更新設定
+  # npmの更新設定
   - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      timezone: "Asia/Tokyo"
-    versioning-strategy: "auto"
-    labels:
-      - "dependencies"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-
-  # apps配下のパッケージの更新設定
-  - package-ecosystem: "npm"
-    directories: ["/apps/*"]
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      timezone: "Asia/Tokyo"
-    versioning-strategy: "auto"
-    labels:
-      - "dependencies"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    groups:
-      dependencies:
-        patterns:
-          - "*"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-
-  # packages配下のパッケージの更新設定
-  - package-ecosystem: "npm"
-    directories: ["/packages/*"]
+    directories:
+      - "/"
+      - "/apps/*"
+      - "/packages/*"
     schedule:
       interval: "weekly"
       day: "monday"
