@@ -2,10 +2,7 @@ version: 2
 updates:
   # npmの更新設定
   - package-ecosystem: "npm"
-    directories:
-      - "/"
-      - "/apps/*"
-      - "/packages/*"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
