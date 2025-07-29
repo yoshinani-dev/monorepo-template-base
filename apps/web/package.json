@@ -13,7 +13,7 @@
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "next": "15.4.2",
+    "next": "15.4.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "valibot": "^1.1.0"
@@ -24,7 +24,7 @@
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "@vitejs/plugin-react": "^4.7.0",
-    "eslint-config-next": "15.4.2",
+    "eslint-config-next": "15.4.4",
     "jsdom": "^25.0.1",
     "tailwindcss": "^4.1.11",
     "typescript": "5.8.3",
