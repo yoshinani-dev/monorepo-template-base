@@ -8,10 +8,10 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@yoshinani/style-guide": "^0.12.2",
+    "@yoshinani/style-guide": "^0.12.3",
     "eslint": "^9",
     "prettier": "^3.6.2",
-    "turbo": "^2.5.5",
+    "turbo": "^2.5.6",
     "typescript": "5.9.2",
     "vitest": "^3.2.4"
   },
