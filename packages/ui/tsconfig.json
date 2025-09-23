@@ -4,7 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "@repo/ui/*": ["./src/*"]
-    }
+    },
+    "types": ["node"]
   },
   "include": ["src", "postcss.config.mjs", "turbo/**/*.ts"],
   "exclude": ["node_modules", "dist"]
