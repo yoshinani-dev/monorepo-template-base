@@ -5,6 +5,9 @@ on:
     types:
       - review_requested
 
+permissions:
+  pull-requests: write
+
 jobs:
   waiting_for_review:
     runs-on: ubuntu-latest

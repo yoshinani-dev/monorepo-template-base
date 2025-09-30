@@ -5,6 +5,9 @@ on:
     types:
       - submitted
 
+permissions:
+  pull-requests: write
+
 jobs:
   remove:
     if: github.event.review.state == 'approved' || github.event.review.state == 'changes_requested'
