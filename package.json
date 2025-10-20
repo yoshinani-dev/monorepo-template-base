@@ -12,8 +12,8 @@
     "test": "turbo test"
   },
   "devDependencies": {
-    "@yoshinani/style-guide": "^0.14.1",
-    "eslint": "^9.37.0",
+    "@yoshinani/style-guide": "^0.14.2",
+    "eslint": "^9.38.0",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "typescript": "5.9.3",
