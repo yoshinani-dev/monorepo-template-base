@@ -12,12 +12,12 @@
     "test": "turbo test"
   },
   "devDependencies": {
-    "@yoshinani/style-guide": "^0.14.2",
+    "@yoshinani/style-guide": "^0.14.3",
     "eslint": "^9.38.0",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "typescript": "5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.1"
   },
   "packageManager": "pnpm@10.12.4",
   "engines": {
