@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["@yoshinani/style-guide/biome"],
+  "files": {
+    "includes": ["**", "!**/.next", "!**/.turbo"]
+  },
+  "assist": {
+    "enabled": true
+  }
+}
