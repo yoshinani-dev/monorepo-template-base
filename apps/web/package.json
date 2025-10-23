@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit",
+    "check:fix": "pnpm run lint --fix && biome check --write .",
+    "check": "pnpm run lint && biome check .",
+    "dev": "next dev --turbopack",
+    "lint": "eslint . --max-warnings 0",
+    "start": "next start",
     "test": "vitest"
   },
   "dependencies": {

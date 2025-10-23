@@ -3,18 +3,20 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint -- --fix",
-    "lint:ci": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "format:ci": "prettier --check \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo check-types",
+    "check:fix": "turbo check:fix",
+    "check": "turbo check",
+    "dev": "turbo dev",
+    "format:ci": "biome format .",
+    "format": "biome format --write .",
+    "lint:ci": "turbo lint",
+    "lint": "turbo lint -- --fix",
     "test": "turbo test"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.7",
     "@yoshinani/style-guide": "^0.14.3",
     "eslint": "^9.38.0",
-    "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "typescript": "5.9.3",
     "vitest": "^4.0.4"
@@ -22,6 +24,5 @@
   "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=22"
-  },
-  "prettier": "@yoshinani/style-guide/prettier"
+  }
 }
