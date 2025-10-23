@@ -5,6 +5,12 @@ const eslintConfig = [
   {
     ignores: ["**/*.config.mjs"],
   },
+  {
+    rules: {
+      "import/order": "off",
+      "sort-imports": "off",
+    },
+  },
 ]
 
 export default eslintConfig
