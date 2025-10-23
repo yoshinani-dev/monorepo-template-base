@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@repo/ui/*": ["./src/*"]
+      "@repo/*": ["../../packages/*"]
     },
-    "types": ["node"]
+    "types": []
   },
   "include": ["src", "postcss.config.mjs", "turbo/**/*.ts"],
   "exclude": ["node_modules", "dist"]
