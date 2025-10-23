@@ -1,5 +1,5 @@
 import { createEnv } from "@t3-oss/env-nextjs"
-import * as v from "valibot"
+import * as v from "valibot" // eslint-disable-line @typescript-eslint/no-unused-vars -- バリデーションに使用するため
 
 export const env = createEnv({
   /*
