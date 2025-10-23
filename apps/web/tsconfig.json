@@ -2,10 +2,8 @@
   "extends": "@yoshinani/style-guide/typescript/nextjs",
   "compilerOptions": {
     "paths": {
-      "@repo/ui/*": ["../../packages/ui/src/*"],
-      "~/env": ["./env.ts"],
-      "~/features/*": ["./features/*"],
-      "~/lib/*": ["./lib/*"]
+      "@repo/*": ["../../packages/*"],
+      "@/*": ["./*"]
     }
   },
   "include": [
