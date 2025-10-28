@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.7",
-    "@yoshinani/style-guide": "^0.14.3",
+    "@yoshinani/style-guide": "^0.15.0",
     "eslint": "^9.38.0",
     "turbo": "^2.5.8",
     "typescript": "5.9.3",
