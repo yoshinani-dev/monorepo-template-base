@@ -2,6 +2,7 @@
 const nextConfig = {
   transpilePackages: ["@repo/ui"],
   cacheComponents: true,
+  reactCompiler: true,
 }
 
 export default nextConfig
