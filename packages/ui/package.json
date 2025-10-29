@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "ui": "pnpm dlx shadcn@latest",
-    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "check:fix": "pnpm run lint --fix && biome check --write .",
+    "check": "pnpm run lint && biome check .",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "lint": "eslint . --max-warnings 0",
+    "ui": "pnpm dlx shadcn@latest"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "radix-ui": "^1.4.3",
