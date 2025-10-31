@@ -7,12 +7,5 @@
   "extensions.ignoreRecommendations": false,
   "files.associations": {
     ".env.local": "dotenv"
-  },
-  "cSpell.customDictionaries": {
-    "yoshinani": {
-      "name": "yoshinani",
-      "path": "${workspaceFolder}/node_modules/@yoshinani/style-guide/cspell/words.txt",
-      "addWords": false
-    }
   }
 }
