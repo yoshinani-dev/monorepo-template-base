@@ -1,6 +1,6 @@
 # monorepo-template-base
 
-Turborepoを使用したモノレポテンプレートプロジェクトです。Next.jsアプリケーションとshadcn/uiベースのUIコンポーネントライブラリを含んでいます。
+株式会社YOSHINANIのモノレポテンプレートプロジェクトです。Turborepoを使用しており、Next.jsアプリケーションとshadcn/uiベースのUIコンポーネントライブラリを含んでいます。
 
 ## 🏗️ プロジェクト構造
 
@@ -42,7 +42,7 @@ monorepo-template-base/
 ### 1. リポジトリのクローン
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:yoshinani-dev/monorepo-template-base.git
 cd monorepo-template-base
 ```
 
