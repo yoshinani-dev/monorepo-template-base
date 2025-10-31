@@ -77,6 +77,55 @@ VS Codeでプロジェクトを開くと、推奨拡張機能のインストー�
 
 ## 💻 開発
 
+### 環境変数の設定
+
+このプロジェクトでは`@t3-oss/env-nextjs`と`valibot`を使用して環境変数を管理しています。環境変数を追加する場合は、`apps/web/env.ts`を編集してください。
+
+#### サーバーサイドの環境変数を追加する場合
+
+```typescript
+server: {
+  DATABASE_URL: v.string(),
+  API_SECRET_KEY: v.string(),
+},
+```
+
+#### クライアントサイドの環境変数を追加する場合
+
+クライアントで使用する環境変数は`NEXT_PUBLIC_`プレフィックスが必要です:
+
+```typescript
+client: {
+  NEXT_PUBLIC_API_URL: v.string(),
+  NEXT_PUBLIC_APP_NAME: v.string(),
+},
+```
+
+#### runtimeEnvへの追加
+
+`server`と`client`に追加したすべての環境変数を`runtimeEnv`にも追加する必要があります:
+
+```typescript
+runtimeEnv: {
+  // server
+  DATABASE_URL: process.env.DATABASE_URL,
+  API_SECRET_KEY: process.env.API_SECRET_KEY,
+  // client
+  NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+  NEXT_PUBLIC_APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
+},
+```
+
+環境変数の実際の値は`.env.local`ファイルに設定してください:
+
+```bash
+# .env.local
+DATABASE_URL=postgresql://localhost:5432/my-db
+API_SECRET_KEY=your-secret-key
+NEXT_PUBLIC_API_URL=https://api.example.com
+NEXT_PUBLIC_APP_NAME="My App"
+```
+
 ### 開発サーバーの起動
 
 すべてのアプリケーションの開発サーバーを起動:
