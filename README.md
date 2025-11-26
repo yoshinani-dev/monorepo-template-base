@@ -30,6 +30,8 @@ monorepo-template-base/
 - **スタイルガイド**: @yoshinani/style-guide
 - **テスト**: Vitest
 - **CI/CD**: GitHub Actions
+- **環境変数管理**: @t3-oss/env-nextjs
+- **バリデーション**: Valibot
 
 ## 📋 要件
 
