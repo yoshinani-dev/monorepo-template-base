@@ -15,11 +15,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
-    "@yoshinani/style-guide": "^0.15.1",
+    "@yoshinani/style-guide": "^0.15.2",
     "eslint": "^9.39.1",
-    "turbo": "^2.6.1",
+    "turbo": "^2.6.3",
     "typescript": "5.9.3",
-    "vitest": "^4.0.14"
+    "vitest": "^4.0.15"
   },
   "packageManager": "pnpm@10.12.4",
   "engines": {
