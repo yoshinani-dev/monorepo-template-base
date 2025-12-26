@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "check-types": "tsc --noEmit",
+    "check-types": "next typegen && tsc --noEmit",
     "check:fix": "pnpm run lint --fix && biome check --write .",
     "check": "pnpm run lint && biome check .",
     "dev": "next dev --turbopack",
